@@ -9,31 +9,42 @@
   <div class="pt-4"></div>
 <div class="container">
   <div>
-    <h3 class="text-center">ฟอร์มบันทึกข้อมูลด้วย HTML</h3>
+  
   </div>
   <form method="post" autocomplete="off" name="hello-sheet">
-    <div class="form-group">
-      <label for="name">ชื่อ สกุล</label>
-      <input type="text" class="form-control"  placeholder="ชื่อ สกุล" name="ชื่อ-สกุล">
-    </div>
-    <div class="form-group">
-    <label for="name">ชื่อเล่น</label>
-      <input type="text" class="form-control"  placeholder="ชื่อเล่น" name="ชื่อเล่น">
-    </div>
-     <div class="form-group">
-    <label for="name">เบอร์โทร</label>
-      <input type="text" class="form-control"  placeholder="เบอร์โทร" name="เบอร์โทร">
-    </div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">อีเมล</label>
-    <input type="email" name="อีเมล" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="อีเมล">
-  </div>
+    <input type="text" id="พรบ"/>
+    <input type="text" id="ช่องทางร้องเรียน"/>
+    <input type="text" id="เลขรับ_สสจ"/>
+    <input type="text" id="เลขรับ_ฝ่าย"/>
+    <input type="text" id="วันที่รับเรื่อง"/>
+    <input type="text" id="ปี"/>
+    <input type="text" id="ชื่อ_สกุล_ผู้ร้องเรียน"/>
+    <input type="text" id="ที่อยู่"/>
+    <input type="text" id="เบอร์โทรติดต่อ"/>
+    <input type="text" id="เรื่อง"/>
+    <input type="text" id="การดำเนินการ"/>
+    <input type="text" id="ผลการดำเนินการ"/>
+    <input type="text" id="วันที่1"/>
+    <input type="text" id="1_รับเรื่องร้องเรียน"/>
+    <input type="text" id="วันที่2"/>
+    <input type="text" id="2_พิจารณาการฝ่าฝืน"/>
+    <input type="text" id="วันที่3"/>
+    <input type="text" id="3_ข้อมูลครบถ้วน_ไม่ต้องตรวจสถานที่"/>
+    <input type="text" id="วันที่4"/>
+    <input type="text" id="4_ข้อมูลไม่ครบถ้วน_ไม่ต้องตรวจสถานที่"/>
+    <input type="text" id="วันที่5"/>
+    <input type="text" id="5_ข้อมูลไม่ครบถ้วน _ต้องตรวจสถานที่"/>
+    <input type="text" id="วันที่6"/>
+    <input type="text" id="6_ไม่อยู่ในความรับผิดชอบ"/>
+    <input type="text" id="วันที่7"/>
+    <input type="text" id="7_การระงับเรื่องร้องเรียน"/>
+    <input type="text" id="uuid"/>
     
   <button type="submit" name="submit" value="Send message" class="btn btn-primary">บันทึก</button>
 </form>
 </div>
 <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbxQAiicRB3EHSpWo0nzmQFD7yPDLlhzmv2Y3xhCDUmjxqwE-Jcy_4LYVBoVS2_1u1f0ug/exec'
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxB0LG_rg962uBKqJnwmvXsuUzNzoG-vYNYTZ8ClSo0eVsPQiKR-96Gt5AjtBJNYGvG/exec'
             const form = document.forms['hello-sheet']
           
             form.addEventListener('submit', e => {
